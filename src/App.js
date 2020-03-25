@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ButtonMaterail from './ButtonMaterial';
+import { PrimaryButtonComposition, SecondaryButtonComposition, PrimaryButtonHeritage, SecondaryButtonHeritage } from './ButtonStyledComponents'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ButtonMaterail/>
+      <PrimaryButtonComposition>Hello</PrimaryButtonComposition>
+      <SecondaryButtonComposition>World Composition</SecondaryButtonComposition>
+      <PrimaryButtonHeritage>Hello</PrimaryButtonHeritage>
+      <SecondaryButtonHeritage>World Heritage</SecondaryButtonHeritage>
     </div>
   );
 }
